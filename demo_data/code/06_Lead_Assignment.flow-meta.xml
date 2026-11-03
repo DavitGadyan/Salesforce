@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Lead Assignment</label>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+        <connector><targetReference>Loop_Leads</targetReference></connector>
+    </start>
+    <loops>
+        <name>Loop_Leads</name>
+        <collectionReference>Get_All_Leads</collectionReference>
+        <nextValueConnector><targetReference>Get_Owner</targetReference></nextValueConnector>
+    </loops>
+    <recordLookups>
+        <name>Get_Owner</name>
+        <object>User</object>
+        <filters><field>Id</field><operator>EqualTo</operator><value><stringValue>0055g00000ABCDeAAH</stringValue></value></filters>
+        <connector><targetReference>Update_Lead</targetReference></connector>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Lead</name>
+        <inputReference>Loop_Leads</inputReference>
+        <connector><targetReference>Loop_Leads</targetReference></connector>
+    </recordUpdates>
+</Flow>

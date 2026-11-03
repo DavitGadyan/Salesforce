@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1600px; height: 1200px; overflow: hidden; }
+  body { font-family: "Source Sans 3", sans-serif; color: #fff;
+         background: radial-gradient(1200px 800px at 85% 30%, #0b5cab 0%, rgba(11,92,171,0) 60%), linear-gradient(160deg, #032d60 0%, #022450 55%, #014486 100%); position: relative; }
+  body.art { background: url(art.png) center/cover no-repeat; }
+  body.art::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3,45,96,.96) 0%, rgba(3,45,96,.75) 40%, rgba(3,45,96,.15) 75%); }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 48px 48px; mask-image: linear-gradient(90deg, #000 0%, transparent 70%); }
+  .wrap { position: absolute; inset: 0; padding: 92px 88px; }
+  .tag { display: inline-flex; gap: 10px; align-items: center; font: 600 22px "Source Sans 3"; letter-spacing: .02em; color: #9fd3fb; }
+  .tag i { width: 10px; height: 10px; border-radius: 50%; background: #00a1e0; box-shadow: 0 0 0 6px rgba(0,161,224,.18); }
+  h1 { font: 700 86px/1.02 "Poppins"; letter-spacing: -0.03em; margin-top: 26px; max-width: 700px; }
+  h1 em { font-style: normal; color: #7cc7f5; }
+  .sub { font-size: 31px; line-height: 1.35; color: #cfe6fb; margin-top: 26px; max-width: 690px; }
+  .chips { display: grid; gap: 16px; margin-top: 52px; }
+  .chip { display: inline-flex; align-items: center; gap: 14px; padding: 14px 24px 14px 18px; border-radius: 999px; background: rgba(255,255,255,.09); border: 1.5px solid rgba(255,255,255,.28); font: 600 28px "Source Sans 3"; width: max-content; }
+  .chip b { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-size: 18px; }
+  .flow { position: absolute; right: 70px; top: 80px; width: 720px; height: 600px; }
+  .card { position: absolute; right: 70px; bottom: 80px; width: 760px; border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 0 30px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.2); }
+  .card .bar { height: 34px; background: #f3f3f3; display: flex; gap: 8px; align-items: center; padding: 0 14px; border-bottom: 1px solid #dddbda; }
+  .card .bar i { width: 11px; height: 11px; border-radius: 50%; background: #c9c7c5; }
+  .card .bar span { margin-left: 10px; font: 500 15px "IBM Plex Mono"; color: #706e6b; }
+  .card img { display: block; width: 100%; }
+  .foot { position: absolute; left: 88px; bottom: 84px; font: 500 18px "IBM Plex Mono"; color: #8fb8e0; max-width: 660px; white-space: nowrap; line-height: 1.5; }
+  .node text { font-family: "Source Sans 3"; }
+</style></head>
+<body class="BODYCLASS">
+<div class="grid"></div>
+<div class="wrap">
+  <span class="tag"><i></i>Salesforce + Claude + ChatGPT + private LLM</span>
+  <h1>AI on your <em>Salesforce data</em>, safely</h1>
+  <p class="sub">Each request goes to the right model by data sensitivity, stakes and cost. Customer data is masked or never leaves your network.</p>
+  <div class="chips">
+  <span class="chip"><b style="background:#00a1e0">✓</b>No customer data leaks</span>
+  <span class="chip"><b style="background:#0176d3">$</b>Right model, lower AI bill</span>
+  <span class="chip"><b style="background:#2e844a">✓</b>Every action approved &amp; logged</span>
+</div>
+</div>
+
+<svg class="flow" viewBox="0 0 720 600" fill="none">
+  <defs>
+    <linearGradient id="pipe" gradientUnits="userSpaceOnUse" x1="235" y1="0" x2="330" y2="0"><stop offset="0" stop-color="#00a1e0"/><stop offset="1" stop-color="#7cc7f5"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <!-- source: Salesforce data -->
+  <g transform="translate(20,215)">
+    <path d="M58 40c9-10 22-16 37-16 19 0 36 11 45 27 8-4 16-5 25-5 34 0 62 28 62 62s-28 62-62 62c-4 0-8 0-12-1-8 14-23 23-40 23-7 0-14-2-20-5-8 18-26 30-47 30-22 0-40-14-47-33-3 1-6 1-9 1-26 0-47-21-47-47 0-17 9-32 23-40-3-7-4-14-4-22 0-29 23-52 52-52 17 0 33 8 42 21z" transform="translate(30,-20) scale(.82)" fill="#00a1e0" opacity=".95"/>
+    <text x="118" y="182" text-anchor="middle" font-size="25" font-weight="700" fill="#fff">Salesforce data</text>
+    <text x="118" y="210" text-anchor="middle" font-size="19" fill="#cfe6fb">Leads · Cases · Opportunities</text>
+  </g>
+  <!-- pipes -->
+  <path d="M235 300 L 318 300" stroke="url(#pipe)" stroke-width="6" stroke-linecap="round"/><path d="M308 290 L 322 300 L 308 310" stroke="#7cc7f5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M410 280 C 470 200, 500 120, 560 110" stroke="#7cc7f5" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 14"/>
+  <path d="M415 300 C 480 300, 500 300, 560 300" stroke="#2e844a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M410 322 C 470 400, 500 480, 560 490" stroke="#9fd3fb" stroke-width="5" stroke-linecap="round"/>
+  <!-- masked tokens on the external path -->
+  <g font-family="IBM Plex Mono" font-size="15" font-weight="500"><rect x="436" y="160" width="104" height="26" rx="6" fill="#fff1e0"/><text x="488" y="178" text-anchor="middle" fill="#8c4b02">[EMAIL_1]</text></g>
+  <!-- hub -->
+  <g transform="translate(372,300)">
+    <circle r="62" fill="#0176d3" opacity=".35" filter="url(#glow)"/>
+    <polygon points="0,-56 48,-28 48,28 0,56 -48,28 -48,-28" fill="#0176d3" stroke="#9fd3fb" stroke-width="3"/>
+    <path d="M-14 2 l10 10 l20 -22" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="88" text-anchor="middle" font-size="22" font-weight="700" fill="#fff" font-family="Source Sans 3">Policy router</text>
+  </g>
+  <!-- destinations -->
+  <g font-family="Source Sans 3">
+    <g transform="translate(560,60)"><rect width="160" height="100" rx="16" fill="rgba(255,255,255,.1)" stroke="#7cc7f5" stroke-width="2"/>
+      <text x="80" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Claude · GPT</text>
+      <text x="80" y="72" text-anchor="middle" font-size="18" fill="#cfe6fb">PII masked first</text></g>
+    <g transform="translate(560,250)"><rect width="160" height="100" rx="16" fill="rgba(46,132,74,.22)" stroke="#5fc27e" stroke-width="2"/>
+      <text x="80" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Private LLM</text>
+      <text x="80" y="72" text-anchor="middle" font-size="18" fill="#c9f0d4">stays in network</text></g>
+    <g transform="translate(560,440)"><rect width="160" height="100" rx="16" fill="rgba(255,255,255,.1)" stroke="#9fd3fb" stroke-width="2"/>
+      <text x="80" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Salesforce</text>
+      <text x="80" y="72" text-anchor="middle" font-size="18" fill="#cfe6fb">no model, $0</text></g>
+  </g>
+</svg>
+
+<div class="card"><div class="bar"><i></i><i></i><i></i><span>Decision trace · 3 values masked before sending</span></div><img src="thumbnail-shot.png"></div>
+
+
+<p class="foot">Working build · Claude Opus 5.5 · Ollama · FastAPI · Next.js</p>
+</body></html>

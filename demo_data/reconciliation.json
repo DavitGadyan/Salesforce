@@ -1,0 +1,22 @@
+{
+  "Account": {
+    "source": 18400,
+    "target": 18400
+  },
+  "Contact": {
+    "source": 96200,
+    "target": 96143
+  },
+  "Donation__c\u2192GiftTransaction": {
+    "source": 212000,
+    "target": 211520
+  },
+  "Membership__c\u2192MembershipRecord": {
+    "source": 41000,
+    "target": 41000
+  },
+  "Attachments/Files": {
+    "source": 58210,
+    "target": 57902
+  }
+}

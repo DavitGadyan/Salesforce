@@ -1,0 +1,7 @@
+api/.venv/
+api/.env
+api/ops.db
+__pycache__/
+.pytest_cache/
+.playwright-mcp/
+.DS_Store

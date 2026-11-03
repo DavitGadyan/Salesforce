@@ -1,0 +1,40 @@
+{
+  "org_name": "Acme Foundation (Nonprofit Cloud)",
+  "objects": {
+    "Account": [
+      "Name",
+      "Website",
+      "Industry",
+      "NumberOfEmployees",
+      "AnnualRevenue",
+      "BillingCountry",
+      "ParentId"
+    ],
+    "Contact": [
+      "FirstName",
+      "LastName",
+      "Email",
+      "Phone",
+      "MobilePhone",
+      "Birthdate",
+      "MailingStreet",
+      "PreferredLanguage"
+    ],
+    "GiftTransaction": [
+      "Name",
+      "OriginalAmount",
+      "TransactionDate",
+      "CampaignId",
+      "DonorId",
+      "PaymentMethod"
+    ],
+    "MembershipRecord": [
+      "Name",
+      "StartDate",
+      "EndDate",
+      "MemberId",
+      "MembershipLevel",
+      "Status"
+    ]
+  }
+}

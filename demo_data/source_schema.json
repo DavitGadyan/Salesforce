@@ -1,0 +1,39 @@
+{
+  "Account": [
+    "Name",
+    "Website",
+    "Industry",
+    "NumberOfEmployees",
+    "AnnualRevenue",
+    "BillingCountry",
+    "ParentId",
+    "Legacy_Region__c"
+  ],
+  "Contact": [
+    "FirstName",
+    "LastName",
+    "Email",
+    "Phone",
+    "MobilePhone",
+    "Birthdate",
+    "MailingStreet",
+    "Preferred_Language__c",
+    "Donor_Tier__c"
+  ],
+  "Donation__c": [
+    "Name",
+    "Amount__c",
+    "Donation_Date__c",
+    "Campaign__c",
+    "Donor__c",
+    "Card_Last4__c"
+  ],
+  "Membership__c": [
+    "Name",
+    "Start_Date__c",
+    "End_Date__c",
+    "Member__c",
+    "Level__c",
+    "Membership_Status__c"
+  ]
+}

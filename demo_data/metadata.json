@@ -1,0 +1,257 @@
+{
+  "org_name": "Acme Corp",
+  "edition": "Enterprise Edition",
+  "objects": [
+    {
+      "name": "Account",
+      "label": "Account",
+      "custom": false,
+      "records": 18400
+    },
+    {
+      "name": "Contact",
+      "label": "Contact",
+      "custom": false,
+      "records": 96200
+    },
+    {
+      "name": "Lead",
+      "label": "Lead",
+      "custom": false,
+      "records": 30150
+    },
+    {
+      "name": "Opportunity",
+      "label": "Opportunity",
+      "custom": false,
+      "records": 22700
+    },
+    {
+      "name": "Case",
+      "label": "Case",
+      "custom": false,
+      "records": 140300
+    },
+    {
+      "name": "Task",
+      "label": "Task",
+      "custom": false,
+      "records": 1250000
+    },
+    {
+      "name": "EmailMessage",
+      "label": "Email Message",
+      "custom": false,
+      "records": 610000
+    },
+    {
+      "name": "Product2",
+      "label": "Product",
+      "custom": false,
+      "records": 340
+    },
+    {
+      "name": "Pricebook2",
+      "label": "Price Book",
+      "custom": false,
+      "records": 6
+    },
+    {
+      "name": "Membership__c",
+      "label": "Membership",
+      "custom": true,
+      "records": 41000
+    },
+    {
+      "name": "Donation__c",
+      "label": "Donation",
+      "custom": true,
+      "records": 212000
+    },
+    {
+      "name": "Patient_Intake__c",
+      "label": "Patient Intake",
+      "custom": true,
+      "records": 8900
+    },
+    {
+      "name": "Territory_Config__c",
+      "label": "Territory Config",
+      "custom": true,
+      "records": 48
+    },
+    {
+      "name": "Integration_Setting__mdt",
+      "label": "Integration Setting",
+      "custom": true,
+      "records": 12
+    }
+  ],
+  "fields": {
+    "Contact": [
+      {
+        "name": "Email",
+        "type": "email",
+        "pii": true
+      },
+      {
+        "name": "Phone",
+        "type": "phone",
+        "pii": true
+      },
+      {
+        "name": "MobilePhone",
+        "type": "phone",
+        "pii": true
+      },
+      {
+        "name": "Birthdate",
+        "type": "date",
+        "pii": true
+      },
+      {
+        "name": "SSN_Last4__c",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "MailingStreet",
+        "type": "textarea",
+        "pii": true
+      },
+      {
+        "name": "Preferred_Language__c",
+        "type": "picklist",
+        "pii": false
+      },
+      {
+        "name": "Donor_Tier__c",
+        "type": "picklist",
+        "pii": false
+      }
+    ],
+    "Lead": [
+      {
+        "name": "Email",
+        "type": "email",
+        "pii": true
+      },
+      {
+        "name": "Phone",
+        "type": "phone",
+        "pii": true
+      },
+      {
+        "name": "Company",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "LeadSource",
+        "type": "picklist",
+        "pii": false
+      }
+    ],
+    "Patient_Intake__c": [
+      {
+        "name": "Diagnosis_Notes__c",
+        "type": "textarea",
+        "pii": true
+      },
+      {
+        "name": "Insurance_Member_Id__c",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "Date_Of_Birth__c",
+        "type": "date",
+        "pii": true
+      }
+    ],
+    "Donation__c": [
+      {
+        "name": "Card_Last4__c",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "Amount__c",
+        "type": "currency",
+        "pii": false
+      },
+      {
+        "name": "Campaign__c",
+        "type": "reference",
+        "pii": false
+      }
+    ]
+  },
+  "integrations": {
+    "named_credentials": [
+      {
+        "name": "Stripe_API",
+        "endpoint": "https://api.stripe.com",
+        "env": "production"
+      },
+      {
+        "name": "NetSuite_ERP",
+        "endpoint": "https://1234.suitetalk.api.netsuite.com",
+        "env": "production"
+      },
+      {
+        "name": "ModMed_EMA",
+        "endpoint": "https://ema.modmed.com/api",
+        "env": "production"
+      }
+    ],
+    "remote_site_settings": [
+      "https://api.stripe.com",
+      "https://hooks.slack.com"
+    ],
+    "outbound_messages": [
+      {
+        "name": "Send_Order_To_ERP",
+        "endpoint": "https://erp.example.com/inbound"
+      }
+    ],
+    "scheduled_jobs": [
+      {
+        "name": "Nightly_Invoice_Sync",
+        "class": "InvoiceSyncBatch",
+        "cron": "0 0 2 * * ?"
+      },
+      {
+        "name": "Lead_Score_Refresh",
+        "class": "LeadScoreScheduler",
+        "cron": "0 0 * * * ?"
+      },
+      {
+        "name": "Donor_Receipt_Email",
+        "class": "DonorReceiptJob",
+        "cron": "0 30 7 * * ?"
+      }
+    ],
+    "email_deliverability": "All email",
+    "connected_apps": [
+      "HubSpot Sync",
+      "DocuSign",
+      "Conga Composer",
+      "Outreach.io"
+    ],
+    "platform_event_triggers": [
+      "OrderPlacedEvent__e"
+    ],
+    "users": {
+      "active": 412,
+      "integration_users": 7,
+      "admins": 9
+    },
+    "custom_settings_with_urls": [
+      "Payment_Gateway__c.Endpoint__c",
+      "Portal_Config__c.Base_URL__c"
+    ]
+  },
+  "data_storage_gb": 38.6,
+  "file_storage_gb": 412.0
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "Id": "0015g00000Ky9PfAAJ",
+    "Name": "Northwind Health",
+    "Website": "northwind.com",
+    "Industry": "SaaS",
+    "NumberOfEmployees": 2400,
+    "AnnualRevenue": 12000000.0,
+    "BillingCountry": "Canada",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g0000034qY6AAI",
+    "Name": "Bluepeak Capital",
+    "Website": "bluepeak.com",
+    "Industry": "Healthcare",
+    "NumberOfEmployees": 2400,
+    "AnnualRevenue": 1200000.0,
+    "BillingCountry": "Germany",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000Nb3wWAAR",
+    "Name": "Helix Health",
+    "Website": "helix.com",
+    "Industry": "Nonprofit",
+    "NumberOfEmployees": 380,
+    "AnnualRevenue": 1200000.0,
+    "BillingCountry": "United States",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000D25RQAAZ",
+    "Name": "Ironclad Health",
+    "Website": "ironclad.com",
+    "Industry": "Healthcare",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 150000000.0,
+    "BillingCountry": "Germany",
+    "ParentId": "0015g00000Ky9PfAAJ"
+  },
+  {
+    "Id": "0015g000004F5ZRAA0",
+    "Name": "Lumen Labs",
+    "Website": "lumen.com",
+    "Industry": "Nonprofit",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 600000000.0,
+    "BillingCountry": "Germany",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g000003qa7yAAA",
+    "Name": "Meridian Energy",
+    "Website": "meridian.com",
+    "Industry": "Healthcare",
+    "NumberOfEmployees": 380,
+    "AnnualRevenue": 150000000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000EeebyAAB",
+    "Name": "Novacore Labs",
+    "Website": "novacore.com",
+    "Industry": "Energy",
+    "NumberOfEmployees": 8000,
+    "AnnualRevenue": 4500000.0,
+    "BillingCountry": "Netherlands",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g000003abP3AAI",
+    "Name": "Orbital Group",
+    "Website": "orbital.com",
+    "Industry": "Manufacturing",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 4500000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": "0015g00000Ky9PfAAJ"
+  },
+  {
+    "Id": "0015g00000E2Zs8AAF",
+    "Name": "Pinecrest Health",
+    "Website": "pinecrest.com",
+    "Industry": "SaaS",
+    "NumberOfEmployees": 380,
+    "AnnualRevenue": 1200000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000IQ9Y7AAL",
+    "Name": "Quantis Group",
+    "Website": "quantis.com",
+    "Industry": "Nonprofit",
+    "NumberOfEmployees": 120,
+    "AnnualRevenue": 1200000.0,
+    "BillingCountry": "Netherlands",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000aJZqhAAG",
+    "Name": "Redwood Health",
+    "Website": "redwood.com",
+    "Industry": "Financial Services",
+    "NumberOfEmployees": 12,
+    "AnnualRevenue": 150000000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000B6baeAAB",
+    "Name": "Silverline Group",
+    "Website": "silverline.com",
+    "Industry": "Nonprofit",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 600000000.0,
+    "BillingCountry": "United States",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000CN6ZjAAL",
+    "Name": "Tidal Labs",
+    "Website": "tidal.com",
+    "Industry": "Retail",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 12000000.0,
+    "BillingCountry": "United States",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g000004a3dDAAQ",
+    "Name": "Umbra Capital",
+    "Website": "umbra.com",
+    "Industry": "Energy",
+    "NumberOfEmployees": 12,
+    "AnnualRevenue": 48000000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000VhYRnAAN",
+    "Name": "Vantage Retail Co",
+    "Website": "vantage.com",
+    "Industry": "Retail",
+    "NumberOfEmployees": 8000,
+    "AnnualRevenue": 12000000.0,
+    "BillingCountry": "Canada",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000KTbxTAAT",
+    "Name": "Westbrook Group",
+    "Website": "westbrook.com",
+    "Industry": "Manufacturing",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 600000000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000NJFoBAAX",
+    "Name": "Atlas Health",
+    "Website": "atlas.com",
+    "Industry": "Nonprofit",
+    "NumberOfEmployees": 2400,
+    "AnnualRevenue": 4500000.0,
+    "BillingCountry": "Germany",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000inF5aAAE",
+    "Name": "Brightwave Capital",
+    "Website": "brightwave.com",
+    "Industry": "Healthcare",
+    "NumberOfEmployees": 380,
+    "AnnualRevenue": 48000000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000JXVuLAAX",
+    "Name": "Cobalt Capital",
+    "Website": "cobalt.com",
+    "Industry": "Retail",
+    "NumberOfEmployees": 120,
+    "AnnualRevenue": 1200000.0,
+    "BillingCountry": "Canada",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000kSIc4AAG",
+    "Name": "Driftwood Labs",
+    "Website": "driftwood.com",
+    "Industry": "Energy",
+    "NumberOfEmployees": 120,
+    "AnnualRevenue": 48000000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g000007WQAmAAO",
+    "Name": "Evergreen Health",
+    "Website": "evergreen.com",
+    "Industry": "Healthcare",
+    "NumberOfEmployees": 950,
+    "AnnualRevenue": 600000000.0,
+    "BillingCountry": "United Kingdom",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000L9xVQAAZ",
+    "Name": "Foundry Capital",
+    "Website": "foundry.com",
+    "Industry": "Retail",
+    "NumberOfEmployees": 380,
+    "AnnualRevenue": 48000000.0,
+    "BillingCountry": "Netherlands",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g000002zg4mAAA",
+    "Name": "Granite Systems",
+    "Website": "granite.com",
+    "Industry": "Manufacturing",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 4500000.0,
+    "BillingCountry": "Germany",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000ZaouqAAB",
+    "Name": "Harbor Foundation",
+    "Website": "harbor.com",
+    "Industry": "Retail",
+    "NumberOfEmployees": 950,
+    "AnnualRevenue": 48000000.0,
+    "BillingCountry": "Germany",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000KLiMcAAL",
+    "Name": "Keystone Energy",
+    "Website": "keystone.com",
+    "Industry": "Manufacturing",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 4500000.0,
+    "BillingCountry": "Germany",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000VbpT4AAJ",
+    "Name": "Larkspur Retail Co",
+    "Website": "larkspur.com",
+    "Industry": "SaaS",
+    "NumberOfEmployees": 8000,
+    "AnnualRevenue": 1200000.0,
+    "BillingCountry": "United States",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000r5yHUAAY",
+    "Name": "Monarch Systems",
+    "Website": "monarch.com",
+    "Industry": "Retail",
+    "NumberOfEmployees": 45,
+    "AnnualRevenue": 600000000.0,
+    "BillingCountry": "Netherlands",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000ig43kAAA",
+    "Name": "Nimbus Health",
+    "Website": "nimbus.com",
+    "Industry": "Financial Services",
+    "NumberOfEmployees": 380,
+    "AnnualRevenue": 150000000.0,
+    "BillingCountry": "Netherlands",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000iJfahAAC",
+    "Name": "Oakridge Foundation",
+    "Website": "oakridge.com",
+    "Industry": "Nonprofit",
+    "NumberOfEmployees": 8000,
+    "AnnualRevenue": 1200000.0,
+    "BillingCountry": "United States",
+    "ParentId": null
+  },
+  {
+    "Id": "0015g00000qSIjOAAW",
+    "Name": "Prairie Foundation",
+    "Website": "prairie.com",
+    "Industry": "Energy",
+    "NumberOfEmployees": 2400,
+    "AnnualRevenue": 12000000.0,
+    "BillingCountry": "United States",
+    "ParentId": null
+  }
+]
